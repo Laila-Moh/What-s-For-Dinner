@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="container-fluid header-inner">
+            <div class="brand-area">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div>
+                    <h1>What's For Dinner</h1>
+                    <p>Your daily meal inspiration</p>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button class="header-btn" aria-label="Bookmarks">
+                    <i class="fa-solid fa-bookmark"></i>
+                </button>
+                <button class="header-btn" aria-label="History">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </button>
+                <button class="header-btn" aria-label="Settings">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-bg">
+        <div class="container-fluid recipe-wrapper">
+
+            <section class="recipe-card">
+
+
+                <div class="recipe-image-section">
+                    <img id="recipeImage" src="" alt="Recipe image">
+
+                    <div class="rating-badge">
+                        <i class="fa-solid fa-star"></i>
+                        <strong id="recipeRating">4.8</strong>
+                        <span id="recipeReviews">(234 reviews)</span>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="time-item">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Prep Time</span>
+                            <strong id="prepTime">15 min</strong>
+                        </div>
+
+                        <div class="time-item">
+                            <i class="fa-solid fa-fire-burner"></i>
+                            <span>Cook Time</span>
+                            <strong id="cookTime">20 min</strong>
+                        </div>
+
+                        <div class="time-item">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Servings</span>
+                            <strong id="servings">4 people</strong>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="recipe-content">
+
+                    <div class="recipe-heading">
+                        <div class="recipe-title-area">
+                            <div class="badges">
+                                <span class="difficulty-badge" id="difficulty">Easy</span>
+                                <span class="cuisine-badge" id="cuisine">Italian</span>
+                            </div>
+
+                            <h2 id="recipeTitle">Creamy Spaghetti Carbonara</h2>
+                            <p id="recipeDescription">
+                                A classic Italian pasta dish with eggs, cheese, and pancetta
+                            </p>
+                        </div>
+
+                        <div class="title-actions">
+                            <button class="square-btn" aria-label="Save recipe">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </button>
+                            <button class="square-btn" aria-label="Share recipe">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <ul class="nav recipe-tabs" id="recipeTabs">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-tab="ingredients">
+                                <i class="fa-solid fa-list-check"></i> Ingredients
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-tab="instructions">
+                                <i class="fa-solid fa-book-open"></i> Instructions
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-tab="nutrition">
+                                <i class="fa-solid fa-chart-pie"></i> Nutrition
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-tab="tips">
+                                <i class="fa-solid fa-lightbulb"></i> Chef's Tips
+                            </button>
+                        </li>
+                    </ul>
+
+
+                    <div class="tab-content-area">
+
+                        <div id="ingredients" class="tab-panel active-panel">
+                            <div class="ingredients-box" id="ingredientsList"></div>
+                        </div>
+
+                        <div id="instructions" class="tab-panel">
+                            <div class="instructions-list" id="instructionsList"></div>
+                        </div>
+
+                        <div id="nutrition" class="tab-panel">
+                            <div class="nutrition-grid" id="nutritionList"></div>
+                        </div>
+
+                        <div id="tips" class="tab-panel">
+                            <div class="tips-list" id="tipsList"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="bottom-action">
+                        <button onclick="displayRecipes()" id="randomBtn" class="random-btn">
+                            <i class="fa-solid fa-rotate"></i>Try Another Recipe
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
